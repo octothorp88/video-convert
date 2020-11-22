@@ -15,4 +15,4 @@ IFS=$SAVEIFS
 #avconv -i $f -c:v libx264 -c:a copy ${NAME}.mp4
 
 # Possability to combine the files
-# avconv -i concat:file1.mp4\|file2.mp4 -c copy output.mp4
+# cat *.VOB | avconv -i - -c copy test.mp4
